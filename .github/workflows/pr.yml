@@ -47,7 +47,8 @@ jobs:
           path: ./dist
       
       - name: Deploy to GitHub Pages
-        uses: actions/githubpages_demo@v3
+        id: deployment
+        uses: actions/deploy-pages@v1
         with:
           publish_dir: ./dist
 
